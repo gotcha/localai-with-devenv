@@ -11,7 +11,7 @@
   scripts.up.exec = "devenv up";
 
   enterShell = ''
-    [ ! -d .venv] && uv venv
+    [ ! -d .venv ] && uv venv
     source .venv/bin/activate
     uv pip install jinja2 mlx-lm chainlit openai
   '';
